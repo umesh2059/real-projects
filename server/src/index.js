@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
-import Router from "./routes/userRoutes.js"
+import router from "./routes/userRoutes.js"
 
 import mongoose from "mongoose";
 
@@ -21,9 +21,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get("/",(req,res)=>{
-    res.send("backend is runnning");
-});
+// app.get("/",(req,res)=>{
+//     res.send("backend is runnning");
+// });
 
 const PORT = process.env.PORT || 5000;
 
