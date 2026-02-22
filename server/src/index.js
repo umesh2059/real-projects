@@ -10,7 +10,7 @@ dotenv.config();
 app.use("/api/users",userRoutes);
 mongoose.connect(process.env.MONGO_URI)
 .then(()=>{
-    console.log("connected to db")
+    console.log(" mongodb connected to db")
 })
 .catch((err)=>{
     console.log(err)
